@@ -25,12 +25,16 @@ window.testAction = function() {
 	$("#someButton").animate({height: "300px"});
 }
 ```
+Set it with parameter `none` if you don't need it.
+
 `cssClass` - CSS class you want to add to some element when when is visible:
 ```
 .testClass {
 	background-color: #f00;
 }
 ```
+Set it with parameter `none` if you don't need it.
+
 `cssElem` - the element ID to which you want to add CSS class.
 
 `onlyOnce` - determines whether your JavaScript function and the CSS class are to be run each time the element is visible again. Parameters are "true" or "false". When "true" is selected the CSS class is removed from the element each time when it stops being visible. 

@@ -1,13 +1,14 @@
 # ScrollAction
 ScrollAction is a simple script that makes it easy to execute your own JavaScript functions and/or CSS classes whenever you scroll to an element. 
 
-<h2>1. Add script to HTML.</h2>
+## 1. Add script to HTML.
 
-Add script right before closing `</body>` tag:</br>
+Add script right before closing `</body>` tag:
 ```
 <script src="js/scrollaction.js"></script>
 ```
-<h2>2. Add class and parameters to youre element.</h2>
+
+## 2. Add class and parameters to youre element.
 
 Add class "scrollAction" and parameters to some element in `scroll-action` attribute. In this example `</div>` tag:
 ```
@@ -16,3 +17,20 @@ Add class "scrollAction" and parameters to some element in `scroll-action` attri
      <p>CLICK ME</p>
 </div>
 ```
+
+### Attribute explanation.</h3>
+`funcName` - Your JavaScript function that need to be executed when the element is visible. Function must be present in "window" object:
+```
+window.testAction = function() {
+	$("#someButton").animate({height: "300px"});
+}
+```
+`cssClass` - CSS class you want to add to some element when when is visible:
+```
+.testClass {
+	background-color: #f00;
+}
+```
+`cssElem` - the element ID to which you want to add CSS class.
+
+`onlyOnce` - determines whether your JavaScript function and the CSS class are to be run each time the element is visible again. Parameters are "true" or "false". When "true" is selected the CSS class is removed from the element each time when it stops being visible. 

@@ -41,4 +41,4 @@ Set it with parameter `none` if you don't need it.
 
 `cssElem` - the element ID to which you want to add CSS class.
 
-`onlyOnce` - determines whether your JavaScript function and the CSS class are to be run each time the element is visible again. Parameters are "true" or "false". When "true" is selected the CSS class is removed from the element each time when it stops being visible. 
+`onlyOnce` - determines whether your JavaScript function and the CSS class are to be run each time the element is visible again. Parameters are "true" or "false". When "false" is selected the CSS class is removed from the element each time when it stops being visible. 

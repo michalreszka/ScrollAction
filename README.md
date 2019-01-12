@@ -3,7 +3,11 @@ ScrollAction is a simple script that makes it easy to execute your own JavaScrip
 
 ## 1. Add script to HTML.
 
-Add script right before closing `</body>` tag:
+Add jQuery script:
+```
+<script src="js/jquery-3.3.1.min.js"></script>
+```
+Add scrollaction.js script right before closing `</body>` tag:
 ```
 <script src="js/scrollaction.js"></script>
 ```
